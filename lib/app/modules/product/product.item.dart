@@ -16,11 +16,8 @@ class ProductItem extends StatelessWidget {
       padding: EdgeInsets.all(10),
       margin: EdgeInsets.only(top: 2, bottom: 2),
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage("assets/images/bg.png"),
-          fit: BoxFit.fill,
-        ),
-        //color: appContainerBackgroundColor,
+        
+        color: appContainerBackgroundColor,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Row(
@@ -34,7 +31,11 @@ class ProductItem extends StatelessWidget {
             }),
             child: Container(
               decoration: BoxDecoration(
-                color: appPrincipalColor,
+                image: DecorationImage(
+                  image: AssetImage("assets/images/bg.png"),
+                  fit: BoxFit.fill,
+                ),
+                //color: appPrincipalColor,
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Container(
