@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:wafaeats/app/controllers/products/product.controller.dart';
 import 'package:wafaeats/app/core/constants/app.colors.dart';
+import 'package:wafaeats/app/core/constants/app.fonts.dart';
 import 'package:wafaeats/app/data/models/product/product.model.dart';
 
 class FavoriteWidget extends StatefulWidget {
@@ -26,7 +27,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
             fontSize: 15,
             //fontWeight: FontWeight.bold,
             color: appBlackOpacityColor,
-            fontFamily: "RobotoCondensedRegular",
+            fontFamily: appPrincipalFont,
           ),
         ),
         SizedBox(height: 20),
@@ -99,7 +100,7 @@ class FavoriteItem extends StatelessWidget {
               style: TextStyle(
                 color: Colors.white.withOpacity(0.8),
                 fontSize: 13,
-                fontFamily: "RobotoCondensedRegular",
+                fontFamily: appPrincipalFont,
               ),
             ),
             SizedBox(height: 20),
@@ -142,7 +143,7 @@ class FavoriteItem extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.7),
                     fontWeight: FontWeight.bold,
-                    fontFamily: "RobotoCondensedRegular",
+                    fontFamily: appPrincipalFont,
                   ),
                 ),
               ],

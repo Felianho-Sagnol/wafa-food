@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:wafaeats/app/controllers/products/cart.controller.dart';
 import 'package:wafaeats/app/core/constants/app.colors.dart';
 import 'package:wafaeats/app/core/constants/app.constants.dart';
+import 'package:wafaeats/app/core/constants/app.fonts.dart';
 import 'package:wafaeats/app/modules/widgets/badges/badge.widget.dart';
 
 AppBar homeAppBar(BuildContext context, GlobalKey<ScaffoldState> scaffoldKey) {
@@ -26,11 +27,11 @@ AppBar homeAppBar(BuildContext context, GlobalKey<ScaffoldState> scaffoldKey) {
       text: TextSpan(
         children: [
           TextSpan(
-            text: "Helpy",
+            text: "Wafa",
             style: TextStyle(
               color: ksecondaryColor,
               fontWeight: FontWeight.bold,
-              fontFamily: "RobotoCondensedRegular",
+              fontFamily: appPrincipalFont,
               fontSize: 17,
             ),
           ),
@@ -39,7 +40,7 @@ AppBar homeAppBar(BuildContext context, GlobalKey<ScaffoldState> scaffoldKey) {
             style: TextStyle(
               color: kPrimaryColor,
               fontWeight: FontWeight.bold,
-              fontFamily: "RobotoCondensedRegular",
+              fontFamily: appPrincipalFont,
               fontSize: 17,
             ),
           ),

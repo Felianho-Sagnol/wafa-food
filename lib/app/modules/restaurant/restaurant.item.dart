@@ -23,6 +23,7 @@ class RestaurantItem extends StatelessWidget {
         padding: EdgeInsets.all(10),
         margin: EdgeInsets.only(top: 2, bottom: 2),
         decoration: BoxDecoration(
+          
           color: appContainerBackgroundColor,
           borderRadius: BorderRadius.circular(20),
         ),
@@ -30,7 +31,11 @@ class RestaurantItem extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: appPrincipalColor,
+                image: DecorationImage(
+                  image: AssetImage("assets/images/bg.png"),
+                  fit: BoxFit.fill,
+                ),
+                //color: appPrincipalColor,
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Container(

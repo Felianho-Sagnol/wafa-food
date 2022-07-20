@@ -60,7 +60,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                           ),
                           children: [
                             TextSpan(
-                              text: isSignupScreen ? "Helpyfood" : "Helpyfood",
+                              text: isSignupScreen ? "Wafa Food" : "Wafa Food",
                               style: TextStyle(
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold,

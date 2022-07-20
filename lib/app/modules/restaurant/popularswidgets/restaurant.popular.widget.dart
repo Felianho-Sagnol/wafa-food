@@ -2,6 +2,7 @@
 
 import 'package:wafaeats/app/controllers/restaurant/restaurant.controller.dart';
 import 'package:wafaeats/app/core/constants/app.colors.dart';
+import 'package:wafaeats/app/core/constants/app.fonts.dart';
 import 'package:wafaeats/app/data/models/restaurent/restaurant.model.dart';
 import 'package:wafaeats/app/modules/widgets/rating/app.rating.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class _RestaurantPopularWidgetState extends State<RestaurantPopularWidget> {
             fontSize: 15,
             fontWeight: FontWeight.bold,
             color: appBlackOpacityColor,
-            fontFamily: "RobotoCondensedRegular",
+            fontFamily: appPrincipalFont,
           ),
         ),
         SizedBox(height: 20),
@@ -71,7 +72,11 @@ class RestaurantPopularItem extends StatelessWidget {
         width: width * 0.45,
         constraints: BoxConstraints(minHeight: 220),
         decoration: BoxDecoration(
-          color: Colors.black,
+          image: DecorationImage(
+            image: AssetImage("assets/images/bg.png"),
+            fit: BoxFit.fill,
+          ),
+          //color: Colors.black,
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
@@ -102,7 +107,7 @@ class RestaurantPopularItem extends StatelessWidget {
               style: TextStyle(
                 color: Colors.white.withOpacity(0.8),
                 fontSize: 13,
-                fontFamily: "RobotoCondensedRegular",
+                fontFamily: appPrincipalFont,
               ),
             ),
             SizedBox(height: 15),
@@ -117,7 +122,7 @@ class RestaurantPopularItem extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.7),
                     fontWeight: FontWeight.bold,
-                    fontFamily: "RobotoCondensedRegular",
+                    fontFamily: appPrincipalFont,
                   ),
                 ),
               ],

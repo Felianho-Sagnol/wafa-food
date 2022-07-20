@@ -17,7 +17,13 @@ class _DrawerHeaderWidgetState extends State<DrawerHeaderWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: appPrincipalColor,
+      //color: appPrincipalColor,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage("assets/images/drawerHeaderbg.png"),
+          fit: BoxFit.fill,
+        ),
+      ),
       width: double.infinity,
       height: 200,
       padding: EdgeInsets.only(top: 15.0),

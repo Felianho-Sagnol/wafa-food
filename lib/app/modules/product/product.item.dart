@@ -16,7 +16,11 @@ class ProductItem extends StatelessWidget {
       padding: EdgeInsets.all(10),
       margin: EdgeInsets.only(top: 2, bottom: 2),
       decoration: BoxDecoration(
-        color: appContainerBackgroundColor,
+        image: DecorationImage(
+          image: AssetImage("assets/images/bg.png"),
+          fit: BoxFit.fill,
+        ),
+        //color: appContainerBackgroundColor,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Row(
